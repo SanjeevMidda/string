@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+}
+
+.string{
+  width: 2px;
+  height: 80vh;
+  position: absolute;
+  top: 0px;
+  background-color: blue;
+  animation: move 3s linear infinite alternate-reverse;
+  transform-origin: top left;
+  display: flex;
+  justify-content:end;
+  align-items: end;
+}
+
+@keyframes move{
+  from{transform: rotate(90deg);}
+  to{transform: rotate(-90deg);}
+}
+
+h1{
+  font-size: 100px;
+}
